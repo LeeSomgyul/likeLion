@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+    padding: 10px 20px;
+    background-color: white;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 1%;
+    right: 1%;
+    height: 1px;
+    background-color: #ef864e;
+}
+
+.logo {
+    font-family: 'Sriracha', cursive;
+    font-size: 30px;
+    color: #ef864e;
+    white-space: nowrap;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+}
+
+.navbar-left {
+    margin-left: 20px;
+}
+
+.navbar-left a, .navbar-right a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #262626;
+    font-weight: 500;
+}
+
+.navbar-left a.active {
+    color: #ef864e;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.challenge-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+}
+
+.challenge-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.challenge-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.challenge-info {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.challenge-info h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #262626;
+}
+
+.challenge-info p {
+    margin: 0 0 15px;
+    color: #8e8e8e;
+    font-size: 14px;
+}
+
+.challenge-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+.challenge-meta .status {
+    font-weight: bold;
+}
+
+.challenge-meta .status.ongoing {
+    color: #ef864e;
+}
+
+.challenge-meta .status.finished {
+    color: #5f5d5d;
+}
+
+.challenge-meta .dates {
+    color: #8e8e8e;
+}
